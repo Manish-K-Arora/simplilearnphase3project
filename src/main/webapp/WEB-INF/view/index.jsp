@@ -12,11 +12,11 @@
 
 	div.container
 	{
-	width:780px;
-    margin:0 auto;
+	width:990px;
+	height:600px;
+	margin:0 auto;
     background: #FFF;
     box-shadow: 0px 9px 13px 5px;
-    background-image: url('WEB-INF/views/images/shoe.png');
   	}
     header.menu
     {
@@ -51,6 +51,7 @@
  </head>
 <body>
 <div class="container">
+
 <jsp:include page="/WEB-INF/view/components/header.jsp" ></jsp:include>
 <jsp:include page="/WEB-INF/view/components/topbar.jsp" ></jsp:include>
 
@@ -75,8 +76,8 @@
  	  </c:forEach>
 </table>
 </div>
+</div>
 <jsp:include page="/WEB-INF/view/components/footer.jsp"></jsp:include>
 
-</div>
 </body>
 </html>

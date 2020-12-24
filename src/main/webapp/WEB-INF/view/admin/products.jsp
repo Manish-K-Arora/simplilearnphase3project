@@ -17,7 +17,7 @@
     background: #FFF;
     box-shadow: 0px 9px 13px 5px;
     }
-    		footer.separator
+    footer.separator
 	{
 		color:#FFFFFF;
     	font-size: 11px;
