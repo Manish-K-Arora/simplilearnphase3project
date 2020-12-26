@@ -1,2 +1,2 @@
 <%@ page isELIgnored="false" %>
-<h3 align=center> ${pageTitle} </h3>
+<h3 class="heading" align=center> ${pageTitle} </h3>

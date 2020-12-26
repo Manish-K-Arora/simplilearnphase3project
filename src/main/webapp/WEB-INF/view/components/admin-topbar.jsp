@@ -1,4 +1,4 @@
-<header class = "menu" align = center>
+<header class = "menu" align=center>
 <a href="admindashboard">Dashboard</a> | 
 <a href="adminproducts">Setup Products</a> | 
 <a href="admincategories">Setup Product Categories</a> | 

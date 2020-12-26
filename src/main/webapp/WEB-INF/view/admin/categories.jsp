@@ -12,11 +12,17 @@
 div.container
 	{
 	width:990px;
-	height:600px;
+
 	margin:0 auto;
     background: #FFF;
     box-shadow: 0px 9px 13px 5px;
     }
+      	h3.heading
+  	{
+  	font-size: 30px;
+    font-family:sans-serif;
+   
+  	}
     		footer.separator
 	{
 		color:#FFFFFF;
@@ -71,7 +77,8 @@ Total Categories: ${list.size()} &nbsp;&nbsp; <a href="admineditcat?id=0">Add Ca
  	  </c:forEach>
 </table>
 </div> 	
-</div>
+
 <jsp:include page="/WEB-INF/view/components/admin-footer.jsp"></jsp:include>
+</div>
 </body>
 </html>

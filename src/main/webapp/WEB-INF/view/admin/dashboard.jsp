@@ -12,11 +12,16 @@
 	div.container
 	{
 	width:990px;
-	height:600px;
 	margin:0 auto;
     background: #FFF;
     box-shadow: 0px 9px 13px 5px;
     }
+      	h3.heading
+  	{
+  	font-size: 30px;
+    font-family:sans-serif;
+   
+  	}
 		footer.separator
 	{
 		color:#FFFFFF;
@@ -31,7 +36,7 @@
     text-decoration:right;
 	text-align:center;
 	}
-	header.menu
+header.menu
     {
         background: rgb(59, 118, 135);;
     	padding: 20px 0 20px 40px;
@@ -43,7 +48,7 @@
     font-size: 17px;
     font-family: cursive;
     }
-        header.menu a:hover
+    header.menu a:hover
 	{
     color:coral;
 	}
@@ -61,8 +66,8 @@
 <jsp:include page="/WEB-INF/view/components/admin-topbar.jsp" ></jsp:include>
 
 <p class="alignment">Welcome, Admin.<br>Choose an option from the menu above</p>
-</div>
-<jsp:include page="/WEB-INF/view/components/admin-footer.jsp"></jsp:include>
 
+<jsp:include page="/WEB-INF/view/components/admin-footer.jsp"></jsp:include>
+</div>
 </body>
 </html>

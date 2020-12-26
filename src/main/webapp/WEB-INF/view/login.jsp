@@ -11,11 +11,17 @@
 <style>
 div.container
 	{
-	width:780px;
-    margin:0 auto;
+	width:990px;
+	margin:0 auto;
     background: #FFF;
     box-shadow: 0px 9px 13px 5px;
 	}
+	  	h3.heading
+  	{
+  	font-size: 30px;
+    font-family:sans-serif;
+   
+  	}
 header.menu
     {
         background: rgb(59, 118, 135);;
@@ -54,14 +60,15 @@ header.menu
 <jsp:include page="/WEB-INF/view/components/header.jsp" ></jsp:include>
 <jsp:include page="/WEB-INF/view/components/topbar.jsp" ></jsp:include>
 
+<div align = center>
 ${error}
 
 <form name=frmLogin action="loginaction" method="post">
 
-<div align = center>
+
  <table border=1 cellspacing=2 cellpadding=4>
  	<tr>
- 		<td width=25%>Email id*</td>
+ 		<td width=25%>Email-ID*</td>
  		<td><input name=email_id maxlength=50></td>
  	</tr>
  	<tr>
@@ -77,6 +84,7 @@ ${error}
  </table>
  </div>
 </form>
+
 <jsp:include page="/WEB-INF/view/components/footer.jsp"></jsp:include>
 </div>
 </body>

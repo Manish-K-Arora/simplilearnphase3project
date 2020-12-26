@@ -36,13 +36,13 @@ public class MemberController {
 	    {
 		  User user = userService.authenticate(emailId, pwd);
 		  if (user == null) { 
-			  map.addAttribute("error", "Login failed");
+			  map.addAttribute("error", "Login failed!...Incorrect credentials. Try Agin.");
 			  return "login";
 		  }
 		  HttpSession session = request.getSession();
 		  session.setAttribute("user_id", user.getID());
 		  
-		  return "redirect:dashboard"; 
+		  return "redirect:home"; 
 	    }		  
 	  
 	  	  

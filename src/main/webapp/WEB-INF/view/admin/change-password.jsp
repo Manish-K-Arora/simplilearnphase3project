@@ -12,11 +12,17 @@
 div.container
 	{
 	width:990px;
-	height:600px;
+	
 	margin:0 auto;
     background: #FFF;
     box-shadow: 0px 9px 13px 5px;
     }
+      	h3.heading
+  	{
+  	font-size: 40px;
+    font-family:sans-serif;
+   
+  	}
     		footer.separator
 	{
 		color:#FFFFFF;
@@ -61,11 +67,11 @@ ${error }
 <form name=frmPwd method=post action="adminchangepwdaction">
 <table border=1 cellspacing=2 cellpadding=4>
  	<tr>
- 		<td width=25%>Enter new password*</td>
+ 		<td width=45%>Enter new password*</td>
  		<td><input name=pwd maxlength=10 type="password"></td>
  	</tr>
  	<tr>
- 		<td width=25%>Confirm new Password*</td>
+ 		<td width=45%>Confirm new Password*</td>
  		<td><input name=pwd2 maxlength=10 type="password"></td>
  	</tr>
  	<tr>
@@ -76,7 +82,8 @@ ${error }
  </table>
 </form>
 </div>
-</div>
+
 <jsp:include page="/WEB-INF/view/components/admin-footer.jsp"></jsp:include>
+</div>
 </body>
 </html>

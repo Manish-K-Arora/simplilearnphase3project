@@ -12,11 +12,16 @@
 div.container
 	{
 	width:990px;
-	height:600px;
 	margin:0 auto;
     background: #FFF;
     box-shadow: 0px 9px 13px 5px;
     }
+      	h3.heading
+  	{
+  	font-size: 30px;
+    font-family:sans-serif;
+   
+  	}
     		footer.separator
 	{
 		color:#FFFFFF;
@@ -55,7 +60,7 @@ div.container
 <jsp:include page="/WEB-INF/view/components/admin-topbar.jsp" ></jsp:include>
 
 <div align = center>
-<br><br>Total ${list.size()} Orders: ${totalAmount }<br>
+<br><br>Total ${list.size()} Orders: ${totalAmount/2}<br>
 
 <table border=1 cellspacing=2 cellpadding=4>
  	<tr>
@@ -80,7 +85,8 @@ div.container
  	  </c:forEach>
 </table> 		
 </div>
-</div>
+
 <jsp:include page="/WEB-INF/view/components/admin-footer.jsp"></jsp:include>
+</div>
 </body>
 </html>

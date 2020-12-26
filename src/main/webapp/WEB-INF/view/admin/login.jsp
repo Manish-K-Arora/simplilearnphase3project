@@ -17,6 +17,12 @@ div.container
     background: #FFF;
     box-shadow: 0px 9px 13px 5px;
 	}
+		  	h3.heading
+  	{
+  	font-size: 30px;
+    font-family:sans-serif;
+   
+  	}
 	footer.separator
 	{
 		color:#FFFFFF;
@@ -48,11 +54,11 @@ ${error}<br>
 <div align=center>
  <table border=1 cellspacing=2 cellpadding=4>
  	<tr>
- 		<td width=25%>Admin id*</td>
+ 		<td width=35%>Admin-ID*</td>
  		<td><input name=admin_id maxlength=20></td>
  	</tr>
  	<tr>
- 		<td width=25%>Admin Password*</td>
+ 		<td width=35%>Admin Password*</td>
  		<td><input name=admin_pwd maxlength=10 type="password"></td>
  	</tr>
  	<tr>

@@ -12,11 +12,16 @@
 	div.container
 	{
 	width:990px;
-	height:600px;
 	margin:0 auto;
     background: #FFF;
     box-shadow: 0px 9px 13px 5px;
     }
+      	h3.heading
+  	{
+  	font-size: 30px;
+    font-family:sans-serif;
+   
+  	}
     footer.separator
 	{
 		color:#FFFFFF;
@@ -62,15 +67,16 @@ Total Products: ${list.size()}  &nbsp;&nbsp; <a href="admineditproduct?id=0">Add
  	<tr>
  		<td><b>Product</b></td>
  		<td><b>Price</b></td>
- 		<td><b>Added On</b></td>
+ 		<!-- <td><b>Added On</b></td> -->
  		<td><b>Category</b></td>
+ 		<td><b>Action</b></td>
  		<td></td>
  	</tr>
  	<c:forEach items="${list}" var="item">
  	  	<tr>
 	 		<td>${item.name }</td>
  			<td>${item.price }</td>
- 			<td>${item.dateAdded}</td>
+ 		<!-- 	<td>${item.dateAdded}</td> -->
  			<td>${mapCats.get(item.ID)}</td>
  	  		<td>
  	  			<a href="admineditproduct?id=${item.ID}">Edit</a> | <a href="admindeleteproduct?id=${item.ID}">Delete</a>
@@ -79,7 +85,8 @@ Total Products: ${list.size()}  &nbsp;&nbsp; <a href="admineditproduct?id=0">Add
  	  </c:forEach>
 </table> 	
 </div>
-</div>
+
 <jsp:include page="/WEB-INF/view/components/admin-footer.jsp"></jsp:include>
+</div>
 </body>
 </html>

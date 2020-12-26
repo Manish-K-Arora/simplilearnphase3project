@@ -18,9 +18,15 @@
     background: #FFF;
     box-shadow: 0px 9px 13px 5px;
   	}
+  	h3.heading
+  	{
+  	font-size: 30px;
+    font-family:sans-serif;
+   
+  	}
     header.menu
     {
-        background: rgb(59, 118, 135);;
+        background: rgb(59, 118, 135);
     	padding: 20px 0 20px 40px;
     }
     header.menu a
@@ -48,8 +54,9 @@
     text-decoration:right;
 	}
 </style> 
- </head>
+</head>
 <body>
+
 <div class="container">
 
 <jsp:include page="/WEB-INF/view/components/header.jsp" ></jsp:include>

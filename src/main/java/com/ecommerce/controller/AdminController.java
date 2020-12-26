@@ -122,7 +122,7 @@ public class AdminController {
 		  admin.setAdminPwd(pwd);
 		  adminService.updatePwd(admin);
 		  
-	        return "admin/dashboard";  
+	        return "admin/login";  
 	    }		  
 
 	  
@@ -371,7 +371,7 @@ public class AdminController {
 	    {
 		  	HttpSession session = request.getSession();
 		  	session.invalidate();
-		  	
+		  	map.addAttribute("pageTitle", "ADMIN LOGIN");
 	        return "admin/login"; 
 	    }
 }
